@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Smooch&display=swap');
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header id="navbar">
+    <div class="spaceBetween">
+        <div class="flexHorizontal">
+            <img src="assets/images/icon.png" alt="Logo" width="100px">
+            <h1 class="fontChange1">AlgoVis</h1>
+        </div>
+        <nav class="flexHorizontal">
+            <a href="index.html" class="button-64"><span class="text">Home</span></a>
+            <a href="graph.html" class="button-64"><span class="text">Graphs</span></a>
+            <a href="arrays.html" class="button-64"><span class="text">Arrays</span></a>
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <div>
+        <h1 class="heroTitle">Explore the Beauty of Algorithms</h1>
+        <p  >Interactive visualizations to understand complex algorithms with ease.</p>
+        </div>
+    <div class="flexVertical">
+        <a href="graph.html" target="_blank"><img src="assets/images/graphs.png" alt="Hero Image" class="imageEdit marginTop"></a>
+        <a href="arrays.html" target="_blank"><img src="assets/images/arrays.png" alt="Hero Image" class="imageEdit"></a>
+        </div>
+    </div>
+    <video src="./assets/vids/bg.mp4" autoplay loop muted></video>
+</section>
+
+<!--<section>-->
+<!--    <h2>-->
+<!--        Which algorithm would you like to explore?-->
+<!--    </h2>-->
+<!--    <div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h3>Graph Algorithms</h3>-->
+<!--                <i class="gg-arrow-long-right-c"></i>-->
+<!--                <i class="gg-arrow-long-right-c"></i>-->
+<!--                <i class="gg-arrow-long-right-c"></i>-->
+<!--                <i class="gg-arrow-long-right-c"></i>-->
+<!--                <i class="gg-arrow-long-right-c"></i>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="quiz-container">-->
+<!--        <h1>Graphs and Sorting Algorithms Quiz</h1>-->
+<!--        <form id="quizForm">-->
+<!--            &lt;!&ndash; Question 1 &ndash;&gt;-->
+<!--            <div class="question">-->
+<!--                <p>Which graph traversal algorithm would you use to find the shortest path in a weighted graph?</p>-->
+<!--                <div class="options">-->
+<!--                    <label><input type="radio" name="q1" value="DFS"> Depth-First Search (DFS)</label>-->
+<!--                    <label><input type="radio" name="q1" value="BFS"> Breadth-First Search (BFS)</label>-->
+<!--                    <label><input type="radio" name="q1" value="A*"> A* Search Algorithm</label>-->
+<!--                    <label><input type="radio" name="q1" value="Dijkstra"> Dijkstra's Algorithm</label>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Question 2 &ndash;&gt;-->
+<!--            <div class="question">-->
+<!--                <p>Which of the following sorting algorithms is not a comparison-based sort?</p>-->
+<!--                <div class="options">-->
+<!--                    <label><input type="radio" name="q2" value="Quick Sort"> Quick Sort</label>-->
+<!--                    <label><input type="radio" name="q2" value="Merge Sort"> Merge Sort</label>-->
+<!--                    <label><input type="radio" name="q2" value="Bubble Sort"> Bubble Sort</label>-->
+<!--                    <label><input type="radio" name="q2" value="None"> All of the above are comparison-based</label>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Question 3 &ndash;&gt;-->
+<!--            <div class="question">-->
+<!--                <p>What is the average time complexity of Merge Sort?</p>-->
+<!--                <div class="options">-->
+<!--                    <label><input type="radio" name="q3" value="O(n)"> O(n)</label>-->
+<!--                    <label><input type="radio" name="q3" value="O(n log n)"> O(n log n)</label>-->
+<!--                    <label><input type="radio" name="q3" value="O(n^2)"> O(n^2)</label>-->
+<!--                    <label><input type="radio" name="q3" value="O(log n)"> O(log n)</label>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Question 4 &ndash;&gt;-->
+<!--            <div class="question">-->
+<!--                <p>In which scenario would Bubble Sort be a more efficient choice compared to Quick Sort?</p>-->
+<!--                <div class="options">-->
+<!--                    <label><input type="radio" name="q4" value="Large datasets with random order"> Large datasets with random order</label>-->
+<!--                    <label><input type="radio" name="q4" value="Nearly sorted small datasets"> Nearly sorted small datasets</label>-->
+<!--                    <label><input type="radio" name="q4" value="Datasets with many duplicate values"> Datasets with many duplicate values</label>-->
+<!--                    <label><input type="radio" name="q4" value="Never more efficient"> Bubble Sort is never more efficient than Quick Sort</label>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Question 5 &ndash;&gt;-->
+<!--            <div class="question">-->
+<!--                <p>Choose the correct statement about DFS and BFS:</p>-->
+<!--                <div class="options">-->
+<!--                    <label><input type="radio" name="q5" value="DFS uses a queue"> DFS uses a queue</label>-->
+<!--                    <label><input type="radio" name="q5" value="BFS uses a stack"> BFS uses a stack</label>-->
+<!--                    <label><input type="radio" name="q5" value="DFS can be used to detect cycles in a graph"> DFS can be used to detect cycles in a graph</label>-->
+<!--                    <label><input type="radio" name="q5" value="BFS is better for shortest path in weighted graphs"> BFS is better for shortest path in weighted graphs</label>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <button type="submit">Submit</button>-->
+<!--        </form>-->
+<!--        <div id="result"></div>-->
+<!--    <script src="js/quiz.js"></script>-->
+<!--</section>-->
+
+<!-- Interactive Element -->
+<!--<section id="interactive-demo">-->
+<!--    <h2>Try a Simple Sort!</h2>-->
+<!--    &lt;!&ndash; Placeholder for interactive sort element &ndash;&gt;-->
+<!--    <div id="sort-demo-placeholder">Sorting Demo Here</div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; About the Site &ndash;&gt;-->
+<!--<section id="about">-->
+<!--    <h2>About This Site</h2>-->
+<!--    <p>This site was created to help budding computer scientists understand algorithms intuitively.</p>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Latest Updates or Blog Section &ndash;&gt;-->
+<!--<section id="latest-updates">-->
+<!--    <h2>Latest Updates</h2>-->
+<!--    &lt;!&ndash; Placeholder for updates &ndash;&gt;-->
+<!--    <div id="updates-placeholder">Updates and news will be listed here.</div>-->
+<!--</section>-->
+
+<!-- Footer -->
+<footer>
+    <p>Contact us at: <a href="mailto:contact@example.com">contact@example.com</a></p>
+    <p>Follow us on social media</p>
+    <!-- Links to social media would go here -->
+</footer>
+
+</body>
+</html>

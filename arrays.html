@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlgoVis - Arrays</title>
+    <link rel="stylesheet" href="css/arrays.css">
+    <link rel="icon" href="assets/images/icon.png" type="image/icon type">
+</head>
+<body>
+
+    <header class="spaceBetween">
+        <div class="flexHorizontal">
+            <img src="assets/images/icon.png" alt="Icon" width="100px"> <h1 class="fontChange1">Sorting Algorithms</h1>
+        </div>
+        <div>
+            <nav class="flexHorizontal">
+                <a href="index.html" class="button-64" role="button"><span class="text">Home</span></a>
+                <a href="graph.html" class="button-64" role="button"><span class="text">Graphs</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="flexHorizontal" style="display: flex; flex-direction: column; gap: 53px; justify-content: space-evenly; height: 60vh;">
+        <div id="array-container"></div>
+        <div>
+
+            <button onclick="bubbleSort()" class="button-36" role="button">Start Bubble Sort</button>
+            <button onclick="startMergeSort()" class="button-36" role="button">Start Merge Sort</button>
+            <button onclick="startQuickSort()" class="button-36" role="button">Start Quick Sort</button>
+            <button onclick="generateArray()" class="button-36" role="button">Generate New Array</button>
+            <button onclick="stopSorting()" class="button-36" role="button">Stop</button>
+            <label for="speedRange" id="fontColorWhite">Transition Speed: </label>
+            <input type="range" id="speedRange" min="1" max="1000" value="300">
+        </div>
+
+    </section>
+
+
+
+    <script src="js/arrays.js" defer></script>
+
+</body>
+</html>
